@@ -1,0 +1,7 @@
+.App {
+    height: 100%;
+
+    &__main-page-container {
+        height: calc(100% - 80px);
+    }
+}
