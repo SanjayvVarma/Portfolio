@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[5474],{5474:(t,e,s)=>{s.d(e,{SquareDrawer:()=>r});const a=Math.sqrt(2);class r{draw(t){!function(t){const{context:e,radius:s}=t,r=s/a,c=2*r;e.rect(-r,-r,c,c)}(t)}getSidesCount(){return 4}}}}]);
+//# sourceMappingURL=5474.10939738.chunk.js.map
