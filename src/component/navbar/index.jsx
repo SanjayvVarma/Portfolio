@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react'
-import { FaBars } from 'react-icons/fa'  //FaReact remove
+import { FaBars, FaHome } from 'react-icons/fa'  //FaReact remove
 import { HiX } from 'react-icons/hi'
+import { GrResume } from "react-icons/gr";
 import { Link } from 'react-router-dom'
 import './style.scss'
 
@@ -9,26 +10,32 @@ import logo from '../../assets/sk2.png'
 
 const data = [
     {
+        navIcon : <FaHome />,
         label: 'HOME',
         to: '/'
     },
     {
+        navIcon : "",
         label: 'ABOUT ME',
         to: '/about'
     },
     {
+        navIcon : "",
         label: 'SKILLS',
         to: '/skills'
     },
     {
+        navIcon : <GrResume />,
         label: 'RESUME',
         to: '/resume'
     },
     {
+        navIcon : "",
         label: 'PORTFOLIO',
         to: '/portfolio'
     },
     {
+        navIcon : "",
         label: 'CONTACT',
         to: '/contact'
     },
@@ -56,16 +63,18 @@ const Navbar = () => {
 
                     </Link>
                 </div>
+
                 <ul className={`navbar__container__menu ${toggleIcon ? 'active' : " "}`}>
                     {
                         data.map((item, key) => (
                             <li key={key} className='navbar__container__menu__item'>
                                 <Link className='navbar__container__menu__item__links' to={item.to} onClick={closeMenu}>
-                                    {item.label}
+                                 {item.label}
                                 </Link>
                             </li>
                         ))
                     }
+
                 </ul>
                 <div className='nav-icon' onClick={handleToggleIcon}>
                     {
