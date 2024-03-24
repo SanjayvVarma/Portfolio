@@ -23,7 +23,6 @@ function App() {
         renderParticlesInHomePage && <ParticlesComponent />
       }
 
-      {/* <ParticlesComponent /> */}
 
       {/*navbar */}
       <Navbar />
