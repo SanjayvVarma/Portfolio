@@ -84,7 +84,7 @@ const Home = () => {
             <li><a href="https://www.linkedin.com/in/sanjaykvarma/"><FaLinkedin /></a></li>
             <li><a href="https://github.com/SanjayvVarma"><FaGithub /></a></li>
             <li><a href="https://twitter.com/SanjayAzad_"><FaTwitter /></a></li>
-            <li><a href="gmail.comto:spverma.sanjay56056@gmail.com"><IoMail /></a></li>
+            <li><a href="mailto:spverma.sanjay56056@gmail.com"><IoMail /></a></li>
           </ul>
         </div>
       </Animate>

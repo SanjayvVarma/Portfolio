@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .App {
     height: 100%;
+    overflow-x: hidden;
 
     &__main-page-container {
         height: calc(100% - 80px);

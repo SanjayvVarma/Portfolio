@@ -19,7 +19,7 @@ const portfolioData = [
   {
     id: 3,
     name: "Notes App",
-    link: "https://sanjayvvarma.github.io/E-commerce-Cart-Management-System/",
+    link: "https://sanjayvvarma.github.io/Markdown-editor/",
     image: ImageTwo,
   },
   {
@@ -70,9 +70,9 @@ const Portfolio = () => {
     setHoveredValue(index);
   }
 
-  console.log("====================================");
-  console.log(hoveredValue);
-  console.log("====================================");
+  // console.log("====================================");
+  // console.log(hoveredValue);
+  // console.log("====================================");
 
   const filteredItems =
     filteredvalue === 1
