@@ -9,7 +9,7 @@
     &__text-wrapper {
         display: flex;
         justify-content: center;
-       
+
 
         h1 {
             color: var(--yellow-theme-main-color);
@@ -21,14 +21,26 @@
             overflow: hidden;
             white-space: nowrap;
             animation: typingEffectAnimation 2.5s steps(30, end);
+
+
+            div {
+                padding-bottom: 6rem;
+                text-align: center;
+            }
+
+            span {
+                font-family: 'Pacifico', cursive;
+                color: rgb(17, 0, 255);
+            }
         }
     }
-    &__contact-me{
+
+    &__contact-me {
         display: flex;
         justify-content: center;
 
 
-        button{
+        button {
             cursor: pointer;
             padding: 10px 60px;
             font-size: 2rem;
@@ -37,19 +49,66 @@
             border: 1.5px solid var(--yellow-theme-main-color);
             border-radius: 4px;
             font-weight: 500;
-            &:hover{
+
+            &:hover {
                 background-color: var(--yellow-theme-main-color);
                 color: #181818;
             }
         }
     }
+
+    &__social__icons {
+        margin-top: 10rem;
+        text-align: center;
+
+        &__list {
+            display: flex;
+            font-size: 20px;
+            gap: 5rem;
+            color: #fff;
+            list-style: none;
+            justify-content: center;
+
+            li {
+                box-shadow: 0 0 10px rgb(217, 255, 0);
+                border-radius: 50%;
+                padding: 12px 15px;
+                cursor: pointer;
+
+                a {
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: rgb(229, 255, 0);
+                }
+            }
+
+            li:hover {
+                box-shadow: 0 0 10px rgb(6, 22, 245);
+            }
+
+
+
+        }
+    }
+
 }
 
 @media only screen and (max-width : 550px) {
     .home__text-wrapper h1 {
         font-size: 2.7rem;
         line-height: 4.8rem;
-        
+
+    }
+
+    .my__name {
+        font-size: 4rem;
+    }
+
+    .home__social__icons__list {
+        flex-wrap: wrap;
+        margin: 0 2rem;
     }
 }
 
@@ -58,6 +117,10 @@
         font-size: 4rem;
         line-height: 6rem;
     }
+
+    .my__name {
+        font-size: 5rem;
+    }
 }
 
 @media only screen and (min-width:769px) and (max-width : 990px) {
@@ -65,14 +128,19 @@
         font-size: 6rem;
         line-height: 8rem;
     }
+
+    .my__name {
+        font-size: 5rem;
+    }
 }
 
 @keyframes typingEffectAnimation {
-    from{
+    from {
         width: 0;
 
     }
-    to{
+
+    to {
         width: 100%;
     }
 }

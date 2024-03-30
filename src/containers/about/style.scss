@@ -37,8 +37,8 @@
                 span.title,
                 span.value {
                     font-size: 18px;
-                    font-weight: 700;
-                    letter-spacing: 0.5px;
+                    font-weight: 100;
+                    letter-spacing: 1px;
                     border-bottom: 2px solid var(--yellow-theme-main-color);
                     position: relative;
                     display: inline-block;
@@ -60,10 +60,9 @@
                 width: 368px;
                 height: 368px;
                 // background: radial-gradient(180px, var(--yellow-theme-main-color), transparent 90%);
-                background-image: url(../../assets/sk1.jpg);
                 position: relative;
                 border-radius: 50%;
-                border: 1.5px solid var(--yellow-theme-main-color);
+                border: 2px solid var(--yellow-theme-main-color);
                 animation: rotation 17s linear 1s infinite;
 
                 div:nth-child(1) {
@@ -88,6 +87,12 @@
                     position: absolute;
                     left: -8%;
                     top: 41%;
+                }
+
+
+                &__img{
+                    background-image: url(../../assets/sk1.png);
+                    border-radius: 50%;
                 }
             }
         }
@@ -118,7 +123,6 @@
             &__innerContent{
                 width: 270px;
                 height: 270px;
-                background-image: url(../../assets/sk4.png);
                 //   background: radial-gradient(100px, var(--yellow-theme-main-color), transparent 120%);
                 div:nth-child(1) {
                     position: absolute;
@@ -142,6 +146,11 @@
                     position: absolute;
                     left: -12%;
                     top: 40%;
+                }
+
+                &__img{
+                    background-image: url(../../assets/sk4.jpg);
+                    border-radius: 50%;
                 }
             }
         }

@@ -2,35 +2,34 @@ import React from 'react';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import PageHeaderContent from '../../component/pageHeaderContent';
 import { Animate } from 'react-simple-animate';
-import { DiApple, DiAndroid } from 'react-icons/di'
-import { FaDev, FaDatabase } from 'react-icons/fa'
+import { FaReact, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa'
 
 import './style.scss'
 
 const personalDetails = [
   {
-    label: "Name",
+    label: "Name :-",
     value: "Sanjay Varma",
   },
   {
-    label: "Age",
-    value: "21",
+    label: "DOB :-",
+    value: "00",
   },
   {
-    label: "Address",
+    label: "Address :-",
     value: "Sarangpur, Rajgarh, mp",
   },
   {
-    label: "Email",
+    label: "Email :-",
     value: "spverma.sanjay56056@gmail.com",
   },
   {
-    label: "Contact No.",
+    label: "Contact No. :-",
     value: "9009782926",
   },
 ]
 
-const jobSummary = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit magnam officia ipsum ea, ipsa voluptate at id consectetur recusandae, voluptates repellat aliquid quia nam, molestias voluptatem? Alias minus accusamus itaque praesentium quos veritatis voluptatum similique quae rem ipsum! Eligendi atque vero tenetur harum, impedit eveniet, fuga quam sit perferendis, odio nulla deleniti! Porro nihil animi ad, ipsam ut voluptas"
+const jobSummary = "Passionate, hard-working, and consistent full stack developer. Looking for full-time job opportunities as an SDE and full-stack web developer where I can apply my skills to contribute to real-world projects and help others with available technological solutions."
 const About = () => {
   return (
     <section id='about' className='about'>
@@ -84,7 +83,7 @@ const About = () => {
           </Animate>
         </div>
         <div className='about__content__servicesWrapper'>
-        <Animate
+          <Animate
             play
             duration={1.5}
             delay={1}
@@ -96,21 +95,22 @@ const About = () => {
             }}
           >
 
-          <div className='about__content__servicesWrapper__innerContent'>
-            <div>
-              <DiApple size={60} color="var(--yellow-theme-main-color)" />
+            <div className='about__content__servicesWrapper__innerContent__img'>
+              <div className='about__content__servicesWrapper__innerContent'>
+                <div>
+                  <FaHtml5 size={60} color="var(--yellow-theme-main-color)" />
+                </div>
+                <div>
+                  <FaReact size={60} color="var(--yellow-theme-main-color)" />
+                </div>
+                <div>
+                  <FaJava size={60} color="var(--yellow-theme-main-color)" />
+                </div>
+                <div>
+                  <FaCss3Alt size={60} color="var(--yellow-theme-main-color)" />
+                </div>
+              </div>
             </div>
-            <div>
-              <FaDatabase size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-            <div>
-              <FaDev size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-            <div>
-              <DiAndroid size={60} color="var(--yellow-theme-main-color)" />
-            </div>
-
-          </div>
 
           </ Animate>
 

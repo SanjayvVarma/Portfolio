@@ -1,4 +1,4 @@
- const skillsData = [
+const skillsData = [
     {
         label: 'FRONT END',
         data: [
@@ -25,11 +25,11 @@
             },
             {
                 skillName: "PYTHON",
-                percentage: "65"
+                percentage: "0"
             },
             {
-                skillName: "CSS",
-                percentage: "35"
+                skillName: "C++",
+                percentage: "30"
             },
         ]
     },
@@ -38,15 +38,32 @@
         data: [
             {
                 skillName: "MYSQL",
-                percentage: "70"
+                percentage: "0"
             },
             {
                 skillName: "MONGODB",
-                percentage: "65"
+                percentage: "0"
             },
             {
                 skillName: "ORACLE",
-                percentage: "35"
+                percentage: "0"
+            },
+        ]
+    },
+    {
+        label: "Libraries & Framework",
+        data: [
+            {
+                skillName: "REACT",
+                percentage: "82"
+            },
+            {
+                skillName: "BOOTSTRAP",
+                percentage: "40"
+            },
+            {
+                skillName: "TAILWIND",
+                percentage: "40"
             },
         ]
     }
