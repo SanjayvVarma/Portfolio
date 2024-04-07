@@ -9,3 +9,6 @@
     "deploy": "gh-pages -d build",
 
      "gh-pages": "^6.1.1",
+
+
+      "homepage": "https://SanjayvVarma.github.io/Portfolio",
