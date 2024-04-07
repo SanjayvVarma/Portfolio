@@ -112,19 +112,29 @@ const Contact = () => {
   const submitData = async (e) => {
     e.preventDefault();
     const { name, email, description } = userData;
-    const res = await fetch('https://portfoliodatarecods-default-rtdb.firebaseio.com/userDataRecords.json',
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({name, email, description })
+
+    if (name && email && description) {
+      const res = await fetch('https://portfoliodatarecods-default-rtdb.firebaseio.com/userDataRecords.json',
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ name, email, description })
+        }
+      );
+      if (res) {
+        setUserData({
+          name: "",
+          email: "",
+          description: "",
+        })
+        alert("data stored")
+      } else {
+        alert("plz fill the data")
       }
-    );
-    if(res){
-      alert("data stored")
-    }else{
-      alert("plz fill the data")
+    } else {
+      alert(`plz fill the data`)
     }
   }
   return (
