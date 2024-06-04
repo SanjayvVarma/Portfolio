@@ -114,7 +114,7 @@ const Contact = () => {
     const { name, email, description } = userData;
 
     if (name && email && description) {
-      const res = await fetch('https://portfoliodatarecods-default-rtdb.firebaseio.com/userDataRecords.json',
+      const res = await fetch('https://portfoliorecords-16e62-default-rtdb.firebaseio.com/userDataRecords.json',
         {
           method: "POST",
           headers: {
