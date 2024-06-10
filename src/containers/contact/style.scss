@@ -1,8 +1,8 @@
-.contact{
-    &__content{
+.contact {
+    &__content {
         padding: 20px;
 
-        &__header-text{
+        &__header-text {
             color: var(--yellow-theme-sub-text-color);
             display: inline-block;
             font-size: 22px;
@@ -16,7 +16,7 @@
         }
 
         &__header-text::before,
-        &__header-text::after{
+        &__header-text::after {
             position: absolute;
             content: "";
             width: 2px;
@@ -24,27 +24,32 @@
             background-color: var(--yellow-theme-main-color);
             bottom: -1px;
         }
-        &__header-text::before{
+
+        &__header-text::before {
             left: 0;
         }
-        &__header-text::after{
+
+        &__header-text::after {
             right: 0;
         }
 
-        &__form{
+        &__form {
             margin-top: 30px;
 
-            &__controlswrapper{
-                  display: grid;
-                  grid-template-columns: repeat(2,1fr);
-                  gap: 40px;
-                  margin-bottom: 30px;
+            &__controlswrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+                margin-bottom: 30px;
 
-                  div{
+                div {
                     position: relative;
+
                     .inputName,
                     .inputEmail,
-                    .inputDescription{
+                    .inputPhone,
+                    .inputAbout,
+                    .inputDescription {
                         width: 100%;
                         border: 2px solid var(--yellow-theme-main-color);
                         padding: 16px 12px;
@@ -56,7 +61,9 @@
 
                     .nameLabel,
                     .emailLabel,
-                    .descriptionLabel{
+                    .phoneLabel,
+                    .aboutLabel,
+                    .descriptionLabel {
                         font-weight: 500;
                         position: absolute;
                         top: 7px;
@@ -67,30 +74,32 @@
                     }
 
                     .inputName:focus,
+                    .inputPhone:focus,
                     .inputEmail:focus,
-                    .inputDescription:focus{
+                    .inputAbout:focus,
+                    .inputDescription:focus {
                         outline: none;
                     }
 
-                    .inputName:focus + .nameLabel,
-                    .inputName:valid + .nameLabel,
+                    .inputName:focus+.nameLabel,
+                    .inputName:valid+.nameLabel,
+                    .inputPhone:focus+.phoneLabel,
+                    .inputPhone:valid+.phoneLabel,
                     .inputEmail:focus+.emailLabel,
                     .inputEmail:valid+.emailLabel,
-                    .inputDescription:focus + .descriptionLabel,
-                    .inputDescription:valid + .descriptionLabel
-                    {
+                    .inputAbout:focus+.aboutLabel,
+                    .inputAbout:valid+.aboutLabel,
+                    .inputDescription:focus+.descriptionLabel,
+                    .inputDescription:valid+.descriptionLabel {
                         font-size: 18px;
                         top: -25px;
                         left: 0px;
                     }
-
-
-                   
-                  }
+                }
             }
         }
 
-        button{
+        button {
             cursor: pointer;
             padding: 10px 70px;
             font-size: 2rem;
@@ -100,7 +109,7 @@
             border-radius: 4px;
             font-weight: 500;
 
-            &:hover{
+            &:hover {
                 color: #000;
                 background: var(--yellow-theme-main-color);
             }
@@ -108,13 +117,12 @@
     }
 }
 
-
-@media only screen and (max-width : 768px){
-    .contact__content__form{
+@media only screen and (max-width : 768px) {
+    .contact__content__form {
         text-align: center;
 
-        &__controlswrapper{
-            grid-template-columns: repeat(1,1fr);
+        &__controlswrapper {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

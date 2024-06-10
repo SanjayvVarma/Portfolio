@@ -1,8 +1,7 @@
-import React from 'react'
-import './style.scss'
+import React from 'react';
+import './style.scss';
 
 const PageHeaderContent = (props) => {
-
     const { headerText, icon } = props;
     return (
         <div className='wrapper'>
@@ -12,4 +11,4 @@ const PageHeaderContent = (props) => {
     )
 }
 
-export default PageHeaderContent; 
+export default PageHeaderContent;

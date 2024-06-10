@@ -1,18 +1,15 @@
-import React from 'react'
+import React from 'react';
 import { GiSkills } from "react-icons/gi";
-import PageHeaderContent from '../../component/pageHeaderContent'
 import { Animate, AnimateKeyframes } from 'react-simple-animate';
-import { Line } from 'rc-progress'
-import skillsData from './utils'
-import './style.scss'
+import { Line } from 'rc-progress';
+import PageHeaderContent from '../../component/pageHeaderContent';
+import skillsData from './utils';
+import './style.scss';
 
 const Skills = () => {
   return (
     <section id='skills' className='skills'>
-      <PageHeaderContent
-        headerText="My Skills"
-        icon={<GiSkills size={40} />}
-      />
+      <PageHeaderContent headerText="My Skills" icon={<GiSkills size={40} />} />
       <div className='skills__content-wrapper'>
         {
           skillsData.map((item, idx) => {
@@ -29,7 +26,6 @@ const Skills = () => {
                     transform: 'translateX(0px)'
                   }}
                 >
-
                   <h3 className='skills__content-wrapper__inner-content__category-text'>{item.label}</h3>
                   <div className='skills__content-wrapper__inner-content__progressbar-container'>
                     {
@@ -43,7 +39,6 @@ const Skills = () => {
                           >
                             <div className='progressbar-wrapper' key={idx1}>
                               <p>{skillItem.skillName}</p>
-
                               <Line
                                 percent={skillItem.percentage}
                                 strokeWidth="2"
@@ -52,9 +47,7 @@ const Skills = () => {
                                 strokeLinecap="square"
                               />
                             </div>
-
                           </AnimateKeyframes>
-
                         )
                       })
                     }
@@ -66,7 +59,7 @@ const Skills = () => {
         }
       </div >
     </section >
-  )
-}
+  );
+};
 
 export default Skills;

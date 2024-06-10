@@ -10,7 +10,6 @@
         display: flex;
         justify-content: center;
 
-
         h1 {
             color: var(--yellow-theme-main-color);
             margin: 0;
@@ -21,7 +20,6 @@
             overflow: hidden;
             white-space: nowrap;
             animation: typingEffectAnimation 2.5s steps(30, end);
-
 
             div {
                 padding-bottom: 6rem;
@@ -38,7 +36,6 @@
     &__contact-me {
         display: flex;
         justify-content: center;
-
 
         button {
             cursor: pointer;
@@ -87,9 +84,6 @@
             li:hover {
                 box-shadow: 0 0 10px rgb(6, 22, 245);
             }
-
-
-
         }
     }
 
@@ -137,7 +131,6 @@
 @keyframes typingEffectAnimation {
     from {
         width: 0;
-
     }
 
     to {

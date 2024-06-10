@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom'
-import { Animate } from 'react-simple-animate'
+import { useNavigate } from 'react-router-dom';
+import { Animate } from 'react-simple-animate';
 import TypingAnimator from "react-typing-animator";
-import './style.scss'
 import { useEffect, useState } from "react";
+import './style.scss';
 
 const Home = () => {
   const navigate = useNavigate();
   const [fontSize, setFontSize] = useState('');
 
   const handleNavigateToContactMePage = () => {
-    navigate('./contact')
-  }
+    navigate('./contact');
+  };
 
   const textArray = [
     "A Full Stack Developer    ",
@@ -35,7 +35,6 @@ const Home = () => {
 
     handleResize();
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -51,13 +50,11 @@ const Home = () => {
               textArray={textArray}
               cursorColor="transparent"
               textColor="var(--yellow-theme-main-color)"
-              // fontSize="4rem"
               fontSize={fontSize}
               loop
               typingSpeed={60}
               delaySpeed={1000}
               backspace
-
             />
           </div>
         </h1>
@@ -75,9 +72,7 @@ const Home = () => {
       >
         <div className='home__contact-me'>
           <button onClick={handleNavigateToContactMePage}>Hire Me! </button>
-
         </div>
-
         <div className='home__social__icons'>
           <ul className='home__social__icons__list'>
             <li><a href="https://www.instagram.com/sanjayazad_/"><FaInstagram /></a></li>
@@ -90,50 +85,6 @@ const Home = () => {
       </Animate>
     </section>
   )
-}
+};
 
-export default Home
-
-
-
-// import React from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import { Animate } from 'react-simple-animate'
-// import './style.scss'
-
-// const Home = () => {
-//   const navigate = useNavigate();
-
-//   const handleNavigateToContactMePage = () => {
-//     navigate('./contact')
-//   }
-//   return (
-//     <section id="home" className='home'>
-//       <div className='home__text-wrapper'>
-//         <h1>
-//           Hello, I'm Sanjay
-//           <br />
-//           Full Stack Web Developer
-//         </h1>
-//       </div>
-//       <Animate
-//         play
-//         duration={1.5}
-//         delay={1}
-//         start={{
-//           transform: 'translateY(550px)'
-//         }}
-//         end={{
-//           transform: 'translateX(0px)'
-//         }}
-//       >
-//         <div className='home__contact-me'>
-//           <button onClick={handleNavigateToContactMePage}>Hire Me! </button>
-
-//         </div>
-//       </Animate>
-//     </section>
-//   )
-// }
-
-// export default Home
+export default Home;

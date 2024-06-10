@@ -1,10 +1,9 @@
 import React from 'react';
 import { BsInfoCircleFill } from 'react-icons/bs';
-import PageHeaderContent from '../../component/pageHeaderContent';
 import { Animate } from 'react-simple-animate';
-import { FaReact, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa'
-
-import './style.scss'
+import { FaReact, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import PageHeaderContent from '../../component/pageHeaderContent';
+import './style.scss';
 
 const personalDetails = [
   {
@@ -27,9 +26,10 @@ const personalDetails = [
     label: "Contact No. :-",
     value: "9009782926",
   },
-]
+];
 
-const jobSummary = "Passionate, hard-working, and consistent full stack developer. Looking for full-time job opportunities as an SDE and full-stack web developer where I can apply my skills to contribute to real-world projects and help others with available technological solutions."
+const jobSummary = "Passionate, hard-working, and consistent full stack developer. Looking for full-time job opportunities as an SDE and full-stack web developer where I can apply my skills to contribute to real-world projects and help others with available technological solutions.";
+
 const About = () => {
   return (
     <section id='about' className='about'>
@@ -53,8 +53,6 @@ const About = () => {
             <h3>Full Stack Web Developer</h3>
             <p>{jobSummary}</p>
           </Animate>
-
-
           <Animate
             play
             duration={1.5}
@@ -66,19 +64,16 @@ const About = () => {
               transform: 'translateX(0px)'
             }}
           >
-
             <h3 className='personalInformationHeaderText'>Personal Information</h3>
             <ul>
-              {
-                personalDetails.map((item, idx) => {
-                  return (
-                    <li key={idx}>
-                      <span className='title'>{item.label}</span>
-                      <span className='value'>{item.value}</span>
-                    </li>
-                  )
-                })
-              }
+              {personalDetails.map((item, idx) => {
+                return (
+                  <li key={idx}>
+                    <span className='title'>{item.label}</span>
+                    <span className='value'>{item.value}</span>
+                  </li>
+                )
+              })}
             </ul>
           </Animate>
         </div>
@@ -94,7 +89,6 @@ const About = () => {
               transform: 'translateX(0px)'
             }}
           >
-
             <div className='about__content__servicesWrapper__innerContent__img'>
               <div className='about__content__servicesWrapper__innerContent'>
                 <div>
@@ -111,15 +105,11 @@ const About = () => {
                 </div>
               </div>
             </div>
-
           </ Animate>
-
         </div>
-
       </div>
-
     </section>
   )
-}
+};
 
-export default About
+export default About;

@@ -1,13 +1,13 @@
 import React from "react";
-import PageHeaderContent from "../../component/pageHeaderContent";
+import { useState } from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
+import PageHeaderContent from "../../component/pageHeaderContent";
 import ImageOne from "../../assets/image1.jpg";
 import ImageTwo from "../../assets/image2.jpg";
 import ImageThree from "../../assets/image3.jpg";
 import ImageFour from "../../assets/image4.jpg";
 import ImageFive from "../../assets/image5.jpg";
 import "./style.scss";
-import { useState } from "react";
 
 const portfolioData = [
   {
@@ -70,23 +70,12 @@ const Portfolio = () => {
     setHoveredValue(index);
   }
 
-  // console.log("====================================");
-  // console.log(hoveredValue);
-  // console.log("====================================");
-
   const filteredItems =
-    filteredvalue === 1
-      ? portfolioData
-      : portfolioData.filter((item) => item.id === filteredvalue);
-
-  console.log(filteredItems);
+    filteredvalue === 1 ? portfolioData : portfolioData.filter((item) => item.id === filteredvalue);
 
   return (
     <section id="portfolio" className="portfolio">
-      <PageHeaderContent
-        headerText="My Portfolio"
-        icon={<BsInfoCircleFill size={40} />}
-      />
+      <PageHeaderContent headerText="My Portfolio" icon={<BsInfoCircleFill size={40} />} />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">
           {filterData.map((item) => (
@@ -127,4 +116,5 @@ const Portfolio = () => {
     </section>
   );
 };
+
 export default Portfolio;

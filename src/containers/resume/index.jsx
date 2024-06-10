@@ -1,11 +1,11 @@
-import React from 'react'
-import { BsInfoCircleFill } from 'react-icons/bs'
-import PageHeaderContent from '../../component/pageHeaderContent';
+import React from 'react';
+import { BsInfoCircleFill } from 'react-icons/bs';
+import { MdWork } from 'react-icons/md';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css'
-import data from './utils.js'
-import './style.scss'
-import { MdWork } from 'react-icons/md'
+import 'react-vertical-timeline-component/style.min.css';
+import PageHeaderContent from '../../component/pageHeaderContent';
+import data from './utils.js';
+import './style.scss';
 
 const Resume = () => {
   return (
@@ -17,10 +17,7 @@ const Resume = () => {
       <div className='timeline'>
         <div className='timeline__exprience'>
           <h3 className='timeline__exprience__header-text'>Experience</h3>
-          <VerticalTimeline
-            layout={'1-column'}
-            lineColor='var(--yellow-theme-main-color)'
-          >
+          <VerticalTimeline layout={'1-column'} lineColor='var(--yellow-theme-main-color)'>
             {
               data.experience.map((item, idx) => (
                 <VerticalTimelineElement
@@ -30,7 +27,7 @@ const Resume = () => {
                     color: 'var(--yellow-theme-sub-text-color)',
                     border: '1.5px solid var(--yellow-theme-main-color)'
                   }}
-                  // date='2022-2022'
+                    // date='2022-2022'
                   icon={<MdWork />}
                   iconStyle={{
                     color: 'var(--yellow-theme-main-color)',
@@ -41,9 +38,8 @@ const Resume = () => {
                     <h3>{item.title}</h3>
                     <h4>{item.subTitle}</h4>
                   </div>
-                    <p className='vertical-timeline-element-title-wrapper-description'>{item.description}</p>
-                    <p className='vertical-timeline-element-title-wrapper-description'>{item.date}</p>
-
+                  <p className='vertical-timeline-element-title-wrapper-description'>{item.description}</p>
+                  <p className='vertical-timeline-element-title-wrapper-description'>{item.date}</p>
                 </VerticalTimelineElement>
               ))
             }
@@ -51,10 +47,7 @@ const Resume = () => {
         </div>
         <div className='timeline__education'>
           <h3 className='timeline__education__header-text'>Education</h3>
-          <VerticalTimeline
-            layout={'1-column'}
-            lineColor='var(--yellow-theme-main-color)'
-          >
+          <VerticalTimeline layout={'1-column'} lineColor='var(--yellow-theme-main-color)'>
             {
               data.education.map((item, idx) => (
                 <VerticalTimelineElement
@@ -75,8 +68,8 @@ const Resume = () => {
                     <h3 >{item.title}</h3>
                     <h4>{item.subTitle}</h4>
                   </div>
-                    <p className='vertical-timeline-element-title-wrapper-description'>{item.description}</p>
-                    <p className='vertical-timeline-element-title-wrapper-description'>{item.date}</p>
+                  <p className='vertical-timeline-element-title-wrapper-description'>{item.description}</p>
+                  <p className='vertical-timeline-element-title-wrapper-description'>{item.date}</p>
 
                 </VerticalTimelineElement>
               ))
@@ -86,6 +79,6 @@ const Resume = () => {
       </div>
     </section>
   )
-}
+};
 
-export default Resume
+export default Resume;

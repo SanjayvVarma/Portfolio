@@ -1,89 +1,76 @@
-
-import React, { useState } from 'react'
-import { FaBars, FaHome } from 'react-icons/fa'  //FaReact remove
-import { HiX } from 'react-icons/hi'
+import React, { useState } from 'react';
+import { FaBars, FaHome } from 'react-icons/fa';
+import { HiX } from 'react-icons/hi';
 import { GrResume } from "react-icons/gr";
-import { Link } from 'react-router-dom'
-import './style.scss'
-
-import logo from '../../assets/sk2.png'
+import { Link } from 'react-router-dom';
+import logo from '../../assets/sk2.png';
+import './style.scss';
 
 const data = [
     {
-        navIcon : <FaHome />,
+        navIcon: <FaHome />,
         label: 'HOME',
-        to: '/'
+        to: '/',
     },
     {
-        navIcon : "",
+        navIcon: "",
         label: 'ABOUT ME',
-        to: '/about'
+        to: '/about',
     },
     {
-        navIcon : "",
+        navIcon: "",
         label: 'SKILLS',
-        to: '/skills'
+        to: '/skills',
     },
     {
-        navIcon : <GrResume />,
+        navIcon: <GrResume />,
         label: 'RESUME',
-        to: '/resume'
+        to: '/resume',
     },
     {
-        navIcon : "",
+        navIcon: "",
         label: 'PORTFOLIO',
         to: '/portfolio'
     },
     {
-        navIcon : "",
+        navIcon: "",
         label: 'CONTACT',
-        to: '/contact'
+        to: '/contact',
     },
-]
-
+];
 
 const Navbar = () => {
-    const [toggleIcon, setToggleIcon] = useState(false)
+    const [toggleIcon, setToggleIcon] = useState(false);
 
     const handleToggleIcon = () => {
         setToggleIcon(!toggleIcon)
-
-    }
+    };
 
     const closeMenu = () => {
         setToggleIcon(false);
     };
+
     return (
         <div>
             <nav className='navbar'>
                 <div className='navbar__container'>
                     <Link to={'/'} className='navbar__container__logo'>
-                        {/* <FaReact size={30} /> */}
                         <img src={logo} alt='blank' />
-
                     </Link>
                 </div>
-
                 <ul className={`navbar__container__menu ${toggleIcon ? 'active' : " "}`}>
-                    {
-                        data.map((item, key) => (
-                            <li key={key} className='navbar__container__menu__item'>
-                                <Link className='navbar__container__menu__item__links' to={item.to} onClick={closeMenu}>
-                                 {item.label}
-                                </Link>
-                            </li>
-                        ))
-                    }
-
+                    {data.map((item, key) => (
+                        <li key={key} className='navbar__container__menu__item'>
+                            <Link className='navbar__container__menu__item__links' to={item.to} onClick={closeMenu}>
+                                {item.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
                 <div className='nav-icon' onClick={handleToggleIcon}>
-                    {
-                        toggleIcon ? <HiX size={30} /> : <FaBars size={30} />
-                    }
+                    {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
                 </div>
-
             </nav>
-
         </div>
     )
 }
