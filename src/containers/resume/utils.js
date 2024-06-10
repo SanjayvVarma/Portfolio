@@ -38,7 +38,27 @@ const data = {
             description: "Board: MadhyaPradesh",
             date: "2016-17",
         },
+    ],
+    certificate: [
+        {
+            title: "Cisco Networking",
+            subTitle: "PITS Ujjain",
+            description: "",
+            date: "2023",
+        },
+        {
+            title: "Innovation in science pursuit for inspird research",
+            subTitle: "Bhopal",
+            description: "",
+            date: "2017",
+        },
+        {
+            title: "NA",
+            subTitle: "NA",
+            description: "NA",
+            date: "NA",
+        },
     ]
-}
+};
 
 export default data;
