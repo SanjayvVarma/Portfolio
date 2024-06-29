@@ -38,7 +38,7 @@ const Skills = () => {
                             iterationCount="1"
                           >
                             <div className='progressbar-wrapper' key={idx1}>
-                              <p>{skillItem.skillName}</p>
+                              <p>{skillItem.skillName}:-<span style={{color:"rgb(0, 157, 255)"}}>{skillItem.percentage} % </span></p>
                               <Line
                                 percent={skillItem.percentage}
                                 strokeWidth="2"

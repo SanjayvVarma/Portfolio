@@ -3,16 +3,16 @@ const skillsData = [
         label: 'FRONT END',
         data: [
             {
-                skillName: "HTML",
-                percentage: "95"
+                skillName: "HTML ",
+                percentage: " 95"
             },
             {
-                skillName: "CSS",
-                percentage: "90"
+                skillName: "CSS ",
+                percentage: " 90"
             },
             {
-                skillName: "JAVASCRIPT",
-                percentage: "90"
+                skillName: "JAVASCRIPT ",
+                percentage: " 90"
             },
         ]
     },
@@ -20,16 +20,16 @@ const skillsData = [
         label: "BACK END",
         data: [
             {
-                skillName: "JAVA",
-                percentage: "70"
+                skillName: "JAVA ",
+                percentage: " 70"
             },
             {
-                skillName: "NODE JS",
-                percentage: "90"
+                skillName: "NODE JS ",
+                percentage: " 90"
             },
             {
-                skillName: "EXPRESS JS",
-                percentage: "90"
+                skillName: "EXPRESS JS ",
+                percentage: " 90"
             },
         ]
     },
@@ -37,16 +37,16 @@ const skillsData = [
         label: "DATABASES",
         data: [
             {
-                skillName: "MYSQL",
-                percentage: "0"
+                skillName: "MYSQL ",
+                percentage: " 0"
             },
             {
-                skillName: "MONGODB",
-                percentage: "90"
+                skillName: "MONGODB ",
+                percentage: " 90"
             },
             {
-                skillName: "ORACLE",
-                percentage: "0"
+                skillName: "ORACLE ",
+                percentage: " 0"
             },
         ]
     },
@@ -54,16 +54,16 @@ const skillsData = [
         label: "Libraries & Framework",
         data: [
             {
-                skillName: "REACT",
-                percentage: "82"
+                skillName: "REACT ",
+                percentage: " 82"
             },
             {
-                skillName: "BOOTSTRAP",
-                percentage: "40"
+                skillName: "BOOTSTRAP ",
+                percentage: " 40"
             },
             {
-                skillName: "TAILWIND",
-                percentage: "60"
+                skillName: "TAILWIND ",
+                percentage: " 60"
             },
         ]
     }
