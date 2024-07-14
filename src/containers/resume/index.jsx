@@ -1,16 +1,17 @@
 import React from 'react';
-import { BsInfoCircleFill } from 'react-icons/bs';
+import { MdDownloadForOffline } from 'react-icons/md';
 import { MdWork } from 'react-icons/md';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import PageHeaderContent from '../../component/pageHeaderContent';
+import resumeLink from '../../assets/Sanjay_Update_Resume.pdf'
 import data from './utils.js';
 import './style.scss';
 
 const Resume = () => {
   return (
     <section id='resume' className='resume'>
-      <PageHeaderContent headerText="My Resume" icon={<BsInfoCircleFill size={40} />} />
+      <PageHeaderContent headerText="My Resume" icon={<a href={resumeLink} download={resumeLink}><MdDownloadForOffline size={40} /></a>} />
       <div className='timeline'>
         <div className='timeline__education'>
           <h3 className='timeline__education__header-text'>Education</h3>

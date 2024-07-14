@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 
 const PageHeaderContent = (props) => {
-    const { headerText, icon } = props;
+    const { headerText, icon, } = props;
     return (
         <div className='wrapper'>
             <h2>{headerText}</h2>
