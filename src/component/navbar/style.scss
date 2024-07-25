@@ -60,6 +60,10 @@
     display: none;
 }
 
+.nav_color{
+    color: rgb(0, 217, 255);
+}
+
 @media only screen and (max-width :768px) {
     .navbar__container__menu {
         display: flex;

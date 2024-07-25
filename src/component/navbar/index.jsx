@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaHome } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { GrResume } from "react-icons/gr";
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import logo from '../../assets/sk2.png';
 import './style.scss';
 
@@ -61,9 +61,9 @@ const Navbar = () => {
                 <ul className={`navbar__container__menu ${toggleIcon ? 'active' : " "}`}>
                     {data.map((item, key) => (
                         <li key={key} className='navbar__container__menu__item'>
-                            <Link className='navbar__container__menu__item__links' to={item.to} onClick={closeMenu}>
+                            <NavLink className={({isActive}) => `${isActive ? "nav_color" : ""} navbar__container__menu__item__links`} to={item.to} onClick={closeMenu}>
                                 {item.label}
-                            </Link>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
